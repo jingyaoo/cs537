@@ -1,0 +1,19 @@
+my-cat:
+-read a file as specified by the user and prints its contents.
+-becuase there could be one more files, so that I used for loop for get each file and in each file, I used while loop to get each character.
+ 
+my-grep:
+-This tool looks through a file, line by line, trying to fina a user-specified search term in the line.
+-If a line has the word within it, the line is printed out, otherwise it is out.
+-there are two cases:
+-one case is no file and have a search term, my-grep shoule work,and read from standard input that include search term. Therefore, I used fgets to each line, and use strstr to compare if each line has search term, if there is , then print.
+-second case is there are files and a search term, I used while loop and  getline function to get each line, and then I used strstr function to compare them if each line have search term.
+
+my-zip:
+-compression tool: when you encounter n characters of the same type in a row, the compression tool will turn that into the number n and a single instance of the character.
+-I put counter out for loop, so that I can add each file same characters.
+-I used two char curr and pre to help me calculate. if curr is same with pre character, counter need to plus one; if they are not same, print the pre character
+-I used fwrite to write down counter pinter
+my-unzip:
+-decompression tool: read in the compressed file and print out the uncompressed output to standard output
+-I used fread to read character pinter
